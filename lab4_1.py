@@ -12,3 +12,5 @@ if new_string == new_string[::-1] :
 	print "YES"
 else :
 	print "NO"
+
+	
