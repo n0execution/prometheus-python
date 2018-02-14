@@ -1,4 +1,13 @@
-#function for counting "holes" in numbers
+"""
+function for counting "holes" in numbers
+
+count_holes('123') returns 0
+count_holes(906) returns 3
+count_holes('001') returns 0
+count_holes(-8) returns 2
+count_holes(-8.0) returns "ERROR'
+
+"""
 def count_holes(n) :
 	#amount of holes for each digit
 	case = {'0': 1, '1': 0, '2': 0, '3': 0, '4': 1, '5': 0, '6': 1, '7': 0, '8': 2, '9': 1}
