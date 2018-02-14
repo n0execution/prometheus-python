@@ -1,6 +1,17 @@
 from math import pi
 
-#class for sphere
+"""
+class for sphere
+example:
+s0 = Sphere(0.5) # test sphere creation with radius and default center
+print s0.get_center() # (0.0, 0.0, 0.0)
+print s0.get_volume() # 0.523598775598
+print s0.is_point_inside(0, -1.5, 0) # False
+s0.set_radius(1.6)
+print s0.is_point_inside(0, -1.5, 0) # True
+print s0.get_radius() # 1.6
+
+"""
 class Sphere(object) :
 	#constructor of class
 	def __init__(self, radius = 1, x = 0 , y = 0, z = 0) :	#initial values of variables if user did not define them
