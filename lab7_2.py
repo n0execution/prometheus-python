@@ -1,4 +1,28 @@
-#class which represents progress of some student
+"""
+class which represents progress of some student
+
+example:
+
+conf = {
+'exam_max': 30,
+'lab_max': 7,
+'lab_num': 10,
+'k': 0.61,
+}
+oleg = Student('Oleg', conf)
+oleg.make_lab(1) \ # labs: 1 0 0 0 0 0 0 0 0 0, exam: 0
+.make_lab(8,0) \ # labs: 7 0 0 0 0 0 0 0 0 0, exam: 0
+.make_lab(1) \ # labs: 7 1 0 0 0 0 0 0 0 0, exam: 0
+.make_lab(10,7) \ # labs: 7 1 0 0 0 0 0 7 0 0, exam: 0
+.make_lab(4,1) \ # labs: 7 4 0 0 0 0 0 7 0 0, exam: 0
+.make_lab(5) \ # labs: 7 4 5 0 0 0 0 7 0 0, exam: 0
+.make_lab(6.5) \ # labs: 7 4 5 6.5 0 0 0 7 0 0, exam: 0
+.make_exam(32) # labs: 7 4 5 6.5 0 0 0 7 0 0, exam: 30
+print oleg.is_certified() # (59.5, False)
+oleg.make_lab(7,1) # labs: 7 7 5 6.5 0 0 0 7 0 0, exam: 30
+print oleg.is_certified() # (62.5, True)
+
+"""
 class Student(object) :
 	exam = 0	#marks of the student for an exam
 	result = 0	#whole result of the student
