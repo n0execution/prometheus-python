@@ -1,2 +1,2 @@
 # prometheus-python
-Programming fundamentals course in prometheus.org.ua
+Programming fundamentals course at prometheus.org.ua
