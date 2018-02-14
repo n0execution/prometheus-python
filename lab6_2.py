@@ -29,7 +29,15 @@ morse_code = {
 }
 
 
-#function for encoding text to morse  
+"""
+function for encoding text to morse 
+
+encode_morze('Morze code') returns ^^^_^^^___^^^_^^^_^^^___^_^^^_^___^^^_^^^_^_^___^_______^^^_^_^^^_^___^^^_^^^_^^^___^^^_^_^___^
+encode_morze('Prometheus') returns ^_^^^_^^^_^___^_^^^_^___^^^_^^^_^^^___^^^_^^^___^___^^^___^_^_^_^___^___^_^_^^^___^_^_^
+encode_morze('SOS') returns ^_^_^___^^^_^^^_^^^___^_^_^
+
+"""
+
 def encode_morze(text) :
  	morse = ""    #variable for encoded morse-code
   	index1 = 0   #variable to iterate through each part in morse-code of word
